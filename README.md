@@ -28,7 +28,7 @@ from promptpalette import Composer
 
 api_key = "YOUR_API_KEY"
 provider = "openai"  # or "claude"
-model_name = "gpt-4"  # or "claude-3-5-sonnet-20240620"
+model_name = "gpt-4o"  # or "claude-3-5-sonnet-20240620"
 
 composer = Composer(api_key=api_key, provider=provider, model_name=model_name)
 
