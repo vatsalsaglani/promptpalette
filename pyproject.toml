@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "prompt-palette"
+name = "promptpalette"
 version = "0.1.0"
 description = ""
 authors = ["vatsalsaglani <saglanivatsal@gmail.com>"]
