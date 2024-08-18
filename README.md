@@ -1,5 +1,8 @@
 # PromptPalette
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qujWVI-nd0HBnQz49GsRoido4mIOA7N8?usp=sharing)
+
+
 PromptPalette is a powerful and flexible Python package designed to streamline the process of creating optimized prompts for large language models. It combines strategy selection and prompt writing to generate tailored system prompts for various AI applications.
 
 ## Features
