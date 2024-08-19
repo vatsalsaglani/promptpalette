@@ -28,6 +28,8 @@ class Picker:
             "name": "analyzeAndFetchRelevantPrompts",
             "parameters": PickerOutput.model_json_schema()
         }]
-        return await getattr(self.llm,
-                             self.provider).__tool__(self.model_name, messages,
-                                                     tools)
+        return await getattr(self.llm, self.provider).__tool__(
+            self.model_name,
+            messages,
+            tools,
+            tool_choice={"name": "analyzeAndFetchRelevantPrompts"})
