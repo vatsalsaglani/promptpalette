@@ -9,7 +9,7 @@ class ClaudeLLM(BaseLLM):
     def __init__(self, api_key: str, **kwargs) -> None:
         super().__init__()
         if kwargs.get("api_provider", "") == "bedrock":
-            assert "base_url" in kwargs and "openai_api_version" in kwargs, "When choosing azure `base_url` and `openai_api_version` keyword arguments are required. Please verify if those are provided with the right values along with the `api_key`."
+            assert "aws_access_key" in kwargs and "aws_region" in kwargs and "aws_secret_key" in kwargs, "When choosing bedrock `aws_region`, `aws_access_key` and `aws_secret_key` keyword arguments are required. Please verify if those are provided with the right values."
             self.client = AsyncAnthropicBedrock(
                 aws_access_key=kwargs.get("aws_access_key"),
                 aws_region=kwargs.get("aws_region"),
