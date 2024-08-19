@@ -49,7 +49,7 @@ class OpenAILLM(BaseLLM):
             formatted_tool_choice = {
                 "type": "function",
                 "function": {
-                    "name": tool_choice
+                    "name": tool_choice.get("name")
                 }
             }
         else:
