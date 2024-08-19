@@ -6,7 +6,7 @@ from .prompt import writer_prompt
 class Writer:
 
     def __init__(self, llm_factory, provider: Literal["openai", "claude"],
-                 model_name: str) -> None:
+                 model_name: str, **kwargs) -> None:
 
         self.llm = llm_factory
         self.model_name = model_name

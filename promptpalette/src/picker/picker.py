@@ -8,7 +8,7 @@ from .schema import PickerOutput
 class Picker:
 
     def __init__(self, llm_factory, provider: Literal["openai", "claude"],
-                 model_name: str) -> None:
+                 model_name: str, **kwargs) -> None:
 
         self.llm = llm_factory
         self.model_name = model_name
