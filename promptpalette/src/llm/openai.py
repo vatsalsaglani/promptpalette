@@ -11,7 +11,7 @@ class OpenAILLM(BaseLLM):
         if kwargs.get("api_provider", "") == "azure":
             assert "base_url" in kwargs and "openai_api_version" in kwargs, "When choosing azure `base_url` and `openai_api_version` keyword arguments are required. Please verify if those are provided with the right values along with the `api_key`."
             self.client = AsyncAzureOpenAI(
-                base_url=kwargs.get("base_url"),
+                azure_endpoint=kwargs.get("base_url"),
                 api_key=api_key,
                 api_version=kwargs.get("openai_api_version"))
         else:
